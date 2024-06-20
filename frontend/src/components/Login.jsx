@@ -20,11 +20,11 @@ function Login() {
             {
              console.log(res.data);
              
-             if (res.data.message == "Soeid not exits") 
+             if (res.data.message === "Soeid not exits") 
              {
                alert("Soeid not exits");
              } 
-             else if(res.data.message == "Login Successfull")
+             else if(res.data.message === "Login Successfull")
              { 
                 
                 navigate('/home');

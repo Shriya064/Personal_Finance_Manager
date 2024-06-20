@@ -1,0 +1,218 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #263543; /* Changed sidebar color to dark blue */
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh; /* Ensure the sidebar takes up the full viewport height */
+}
+
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px; /* Adjust margin between list items */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Adjust text color */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.sidebar nav ul li a i {
+    font-size: 1.2rem; /* Adjust icon size */
+    margin-right: 10px; /* Adjust space between icon and text */
+}
+
+.sidebar nav ul li a span {
+    font-size: 1rem; /* Adjust text size */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.user-info .status {
+    color: #2ecc71;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 250px);
+}
+
+.top-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1 1 calc(20% - 10px);
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.card.balance { background-color: #27ae60; }
+.card.shopping { background-color: #2980b9; }
+.card.food { background-color: #f39c12; }
+.card.bills { background-color: #c0392b; }
+.card.others { background-color: #7f8c8d; }
+
+.transactions {
+    margin-bottom: 20px;
+}
+
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions table, .transactions th, .transactions td {
+    border: 1px solid #ddd;
+}
+
+.transactions th, .transactions td {
+    padding: 10px;
+    text-align: left;
+}
+
+.add-expenditure {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    align-self: center; 
+    width: 70%;
+}
+
+.add-expenditure h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.add-expenditure form {
+    display: grid;
+    gap: 10px;
+}
+
+.add-expenditure label {
+    font-weight: bold;
+}
+
+.add-expenditure input, .add-expenditure select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.add-expenditure button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-expenditure button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+    }
+
+    .top-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .transactions table, .transactions th, .transactions td {
+        font-size: 12px;
+    }
+
+    .add-expenditure form {
+        flex-direction: column;
+    }
+
+    .add-expenditure button {
+        width: 100%;
+    }
+}
