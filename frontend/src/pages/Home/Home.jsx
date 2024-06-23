@@ -7,7 +7,6 @@ import CreateTransaction from '../../components/createTransaction/createTransact
 function Home({ selectedContent }) {
   return (
     <div className='home'>
-      home
       {selectedContent === "profile" && <Profile />}
       {selectedContent === "prevTransactions" && <Transactions />}
       {selectedContent === "createTransaction" && <CreateTransaction />}
