@@ -1,0 +1,11 @@
+.content{
+   h1{
+      font-family: 'Courier New', Courier, monospace;
+   }
+   h2{
+      font-family: cursive;
+   }
+   p{
+      font-family: 'comic sans ms';
+   }
+}
