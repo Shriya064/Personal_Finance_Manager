@@ -22,9 +22,21 @@
    .navigation {
       display: flex;
       align-items: center;
-      gap: 2px;
-     
+      gap: 2px; 
       width: 450px;
 
+   }
+}
+
+button{
+   border-radius: 9px;
+   width: 200px;
+   background-color: rgb(20, 175, 236);
+   color: white;
+   font-weight: bold;
+
+   &:hover{
+      background-color: white;
+      color: black;
    }
 }

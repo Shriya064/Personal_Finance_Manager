@@ -4,7 +4,7 @@
    padding: 20px;
    border: 1px solid #ccc;
    border-radius: 8px;
-   background-color: #2e90cd;
+   background-color: rgb(20, 175, 236);
 }
 
 .form-group {
@@ -36,7 +36,7 @@
    display: block;
    width: 100%;
    padding: 10px;
-   background-color: #4caf50;
+   background-color: #42a247;
    color: white;
    border: none;
    border-radius: 4px;
@@ -45,5 +45,5 @@
 }
 
 .submit-button:hover {
-   background-color: #45a049;
+   background-color: #80da82;
 }

@@ -1,6 +1,7 @@
 .menu {
    display: flex;
    gap: 150px;
+   font-weight: bold;
    
 }
 
@@ -18,14 +19,18 @@
    gap: 10px;
    padding: 10px;
    border-radius: 5px;
+   text-decoration: none;
 
    &:hover {
-      background-color: rgb(135, 135, 131)
+      background-color: rgb(217, 217, 209)
    }
 
    .listItemTitle {
-      @include lg {
-         display: none;
-      }
+      color: rgb(20, 175, 236);
+
+      &:hover {
+            color: black;
+      
+         }
    }
 }
