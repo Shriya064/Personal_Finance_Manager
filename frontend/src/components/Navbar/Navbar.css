@@ -1,0 +1,30 @@
+.navbar {
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   .logo {
+      display: flex;
+      width: 350px;
+      font-weight: bold;
+      gap: 3px;
+     
+      align-items: center;
+
+      img{
+         width: 50px;
+        
+      }
+   }
+
+   .navigation {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+     
+      width: 450px;
+
+   }
+}

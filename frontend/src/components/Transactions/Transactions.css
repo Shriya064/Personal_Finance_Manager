@@ -1,0 +1,64 @@
+.table-container {
+   width: 100%;
+   overflow-x: auto;
+   margin: 20px 0;
+}
+
+.responsive-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+   padding: 10px;
+   text-align: left;
+   border: 1px solid #ddd;
+   white-space: nowrap;
+}
+
+.responsive-table th {
+   background-color: #2b7bc1;
+   font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+   .responsive-table th,
+   .responsive-table td {
+      display: block;
+      text-align: right;
+   }
+
+   .responsive-table th::before,
+   .responsive-table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+   }
+
+   .responsive-table th:last-child,
+   .responsive-table td:last-child {
+      border-bottom: 0;
+   }
+
+   .responsive-table th {
+      display: none;
+   }
+
+   .responsive-table td {
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      padding-left: 50%;
+   }
+
+   .responsive-table td::before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      white-space: nowrap;
+   }
+}

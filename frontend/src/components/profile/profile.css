@@ -1,0 +1,13 @@
+.container{
+   display: flex;
+   gap: 5px;
+}
+.box{
+   border: white solid 2px;
+   border-radius: 13px;
+   padding: 5px;
+}
+
+p{
+   color: white;
+}
