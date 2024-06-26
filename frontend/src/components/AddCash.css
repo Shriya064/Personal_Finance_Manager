@@ -1,0 +1,92 @@
+.add-cash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card.balance {
+  background-color: #4caf50; 
+  border: 1px solid #4caf50; 
+  border-radius: 8px; 
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 175px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card.balance h3 {
+  margin: 0;
+  font-size: 1.8em; 
+  color: #ffffff; 
+  margin-bottom: 10px; 
+}
+
+.card.balance p {
+  margin: 0;
+  font-size: 1.4em; 
+  color: #ffffff; 
+}
+
+.add-cash {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-cash h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #495057;
+}
+
+.add-cash .error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.add-cash form div {
+  margin-bottom: 15px;
+}
+
+.add-cash form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.add-cash form input[type="text"],
+.add-cash form input[type="number"],
+.add-cash form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add-cash form button {
+  width: 100%;
+  padding: 12px; 
+  background-color: #5e80a4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-cash form button:hover {
+  background-color: #405872;
+}
