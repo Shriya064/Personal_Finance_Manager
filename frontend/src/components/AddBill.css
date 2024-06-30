@@ -1,0 +1,106 @@
+/* Main container for AddBill component */
+.add-bill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Add Bill form styling */
+  .add-bill {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  .add-bill h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #495057;
+  }
+  
+  .add-bill .error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .add-bill form div {
+    margin-bottom: 15px;
+  }
+  
+  .add-bill form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+  }
+  
+  .add-bill form input[type="text"],
+  .add-bill form input[type="date"],
+  .add-bill form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .add-bill form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5e80a4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-bill form button:hover {
+    background-color: #405872;
+  }
+  
+  /* Bills table styling */
+  .bills-table {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .bills-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bills-table th,
+  .bills-table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .bills-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .bills-table td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .bills-table td a:hover {
+    text-decoration: underline;
+  }
+  
