@@ -310,12 +310,6 @@ function Dashboard() {
                 <span>Add Bill</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-cog"></i>
-                <span>Settings</span>
-              </a>
-            </li>
           </ul>
         </nav>
       </div>
