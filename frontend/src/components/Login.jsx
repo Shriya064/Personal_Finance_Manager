@@ -55,12 +55,12 @@ function Login() {
              </div>
 
              <div class="row">
-             <div class="col-sm-6">
+             <div >
  
             <form>
         <div class="form-group">
-          <label>Soeid</label>
-          <input type="soeid"  class="form-control" id="soeid" placeholder="Enter your soeid"
+          <label>SOEID</label>
+          <input type="soeid"  class="form-control" id="soeid" placeholder="Enter your SOEID"
           
           value={soeid}
           onChange={(event) => {
