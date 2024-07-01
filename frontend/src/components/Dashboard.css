@@ -4,11 +4,13 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  height: 100%;
+  width: 100rem;
 }
 
 .dashboard-container {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
   /* height: 100vh; */
 }
 
@@ -16,9 +18,13 @@ html {
   width: 250px;
   background: #2c3e50;
   color: #ecf0f1;
-  height: 200 rem;
+  height: 100rem;
   padding: 20px;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  justify-content: center;
 }
 
 .sidebar nav ul {
@@ -102,8 +108,9 @@ nav ul li a:hover {
     padding: 20px;
     box-sizing: border-box;
     width: calc(100% - 250px); */
-  flex-grow: 1;
-  padding: 20px;
+  padding-top: 90px;
+  padding-left: 130px;
+ 
 }
 
 .top-cards {
@@ -111,6 +118,7 @@ nav ul li a:hover {
   /* flex-wrap: wrap; */
   justify-content: space-between;
   margin-bottom: 20px;
+ 
 }
 
 .card {
@@ -123,7 +131,9 @@ nav ul li a:hover {
   background: #ecf0f1;
   padding: 20px;
   border-radius: 10px;
-  width: 19%;
+  width: 200px;
+  height: 150px;
+  margin: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -187,7 +197,6 @@ nav ul li a:hover {
 } */
 
 .add-expenditure form label {
-  display: block;
   margin-bottom: 5px;
 }
 

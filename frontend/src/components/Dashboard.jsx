@@ -74,6 +74,7 @@ function Dashboard() {
     <div className="dashboard-container">
       <div className="sidebar">
         <div className="user-info">
+          <p className="fincare-text" style={{fontSize:"40px", marginBottom:"23px"}}>FinCare</p>
           <img src="user-avatar-url" alt="User Avatar" className="avatar" />
           <p>Hello, User</p>
         </div>

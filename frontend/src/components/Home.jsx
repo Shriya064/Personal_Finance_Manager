@@ -11,7 +11,7 @@ function Home() {
         <img src={logo} alt="logo" />    
         <p className="fincare-text">FinCare</p>
       </div>  
-      <section className="main-content">
+      <section className="main-content-container">
           <div className="tag-lines">
           <p className="tagline-1">Your Personal Finance Manager</p>
           <p className="tagline-2">Track. Save. Thrive.</p>
