@@ -1,4 +1,26 @@
-.custom-card {
-    max-width: 600px; /* Adjust this value as needed */
-    margin: 0 auto; /* Center the card horizontally */
+.container{
+    width: 100rem;
+    max-width: 500px;
 }
+
+.registration-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #0ca54c;
+    text-align: center;
+    font-size: 36px;
+}
+
+.form-container{
+    padding: 10px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+

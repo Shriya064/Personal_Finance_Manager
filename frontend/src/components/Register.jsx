@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Register.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Register() {
     const [soeid, setSoeid] = useState("");
@@ -38,50 +38,54 @@ function Register() {
     }
 
     return (
-        <div className="container mt-5">
-           
-                <div className="card-body">
-                    <h1 className="card-title text-center">Registration</h1>
-                    {error && <div className="alert alert-danger">{error}</div>}
-                    <form onSubmit={save}>
-                        <div className="form-group">
-                            <label htmlFor="soeid">Soeid</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="soeid"
-                                placeholder="Enter SOEID"
-                                value={soeid}
-                                onChange={(event) => setSoeid(event.target.value)}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Citi Email</label>
-                            <input
-                                type="email"
-                                className="form-control"
-                                id="email"
-                                placeholder="Enter Citi Email"
-                                value={email}
-                                onChange={(event) => setEmail(event.target.value)}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input
-                                type="password"
-                                className="form-control"
-                                id="password"
-                                placeholder="Enter Password"
-                                value={password}
-                                onChange={(event) => setPassword(event.target.value)}
-                            />
-                        </div>
-                        <button type="submit" className="btn btn-primary mt-4 btn-block">
-                            Save
-                        </button>
-                    </form>
+        <div className="container">     
+            <p className="fincare-text">FinCare</p>
+            <h1 className="registration-text">Registration</h1>
+            <hr />
+            {error && <div className="alert alert-danger">{error}</div>}
+            <form onSubmit={save}>
+                <div className="form-group">
+                    <label htmlFor="soeid">Soeid</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="soeid"
+                        placeholder="Enter SOEID"
+                        value={soeid}
+                        onChange={(event) => setSoeid(event.target.value)}
+                    />
                 </div>
+                <div className="form-group">
+                    <label htmlFor="email">Citi Email</label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        placeholder="Enter Citi Email"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="password"
+                        placeholder="Enter Password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
+                </div>
+
+                <div className="button-container">
+                <button type="submit" className="btn btn-primary">
+                    Register
+                </button>
+                <Link to="/homepage"><button className="back-btn">Back</button></Link>
+                </div>
+            '</form>
+        
             
         </div>
     );
