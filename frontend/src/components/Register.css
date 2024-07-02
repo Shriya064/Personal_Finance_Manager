@@ -1,26 +1,31 @@
-.container{
-    width: 100rem;
-    max-width: 500px;
+.reg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: 20px auto;
 }
 
-.registration-text{
+.registration-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: #0ca54c;
     text-align: center;
     font-size: 36px;
 }
 
-.form-container{
+.form-container {
     padding: 10px;
 }
 
-.button-container{
+.button-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    /* Center buttons horizontally */
     align-items: center;
-    
 }
-
