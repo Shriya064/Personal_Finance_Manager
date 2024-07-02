@@ -81,7 +81,7 @@ function Login() {
                       </div>
                       <div className="button-container">
                         <button type="submit" class="btn btn-primary" onClick={login} >Login</button>
-                        <Link to="/homepage"><button className="back-btn">Back</button></Link>
+                        <Link to="/"><button className="back-btn">Back</button></Link>
                       </div>
                       </form>
                     </div>

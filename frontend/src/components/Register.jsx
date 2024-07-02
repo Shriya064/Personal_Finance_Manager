@@ -82,7 +82,7 @@ function Register() {
                 <button type="submit" className="btn btn-primary">
                     Register
                 </button>
-                <Link to="/homepage"><button className="back-btn">Back</button></Link>
+                <Link to="/"><button className="back-btn">Back</button></Link>
                 </div>
             '</form>
         

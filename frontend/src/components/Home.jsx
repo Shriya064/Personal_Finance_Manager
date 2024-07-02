@@ -18,7 +18,7 @@ function Home() {
           <p className="tagline-3">Smart money management starts here!</p>
           </div>
         <div className="homepage-buttons">
-        <Link to="/" className="btn btn-primary">Login</Link>
+        <Link to="/login" className="btn btn-primary">Login</Link>
         <Link to="/register" className="btn btn-secondary">Register</Link>
         </div>
       </section>
