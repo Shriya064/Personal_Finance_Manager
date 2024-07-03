@@ -1,5 +1,4 @@
-/* Global Styles */
-body,
+/* body,
 html {
   margin: 0;
   padding: 0;
@@ -11,12 +10,11 @@ html {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* height: 100vh; */
 }
 
 .sidebar {
   width: 250px;
-  background: #2c3e50;
+  background: #63441b;
   color: #ecf0f1;
   height: 100rem;
   padding: 20px;
@@ -34,24 +32,24 @@ html {
 }
 
 .sidebar nav ul li {
-  margin-bottom: 10px; /* Adjust margin between list items */
+  margin-bottom: 10px;
 }
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #fff; /* Adjust text color */
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar nav ul li a i {
-  font-size: 1.2rem; /* Adjust icon size */
-  margin-right: 10px; /* Adjust space between icon and text */
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
 .sidebar nav ul li a span {
-  font-size: 1rem; /* Adjust text size */
-  white-space: nowrap; /* Prevent text wrapping */
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .user-info {
@@ -63,7 +61,7 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  /* margin-bottom: 10px; */
+
 }
 
 .user-info p {
@@ -77,7 +75,6 @@ html {
 nav ul {
   list-style-type: none;
   padding: 0;
-  /* width: 100%; */
 }
 
 nav ul li {
@@ -87,10 +84,6 @@ nav ul li {
 nav ul li a {
   color: #ecf0f1;
   text-decoration: none;
-  /* display: block;
-    padding: 10px;
-    text-align: center;
-    border-radius: 4px; */
   display: flex;
   align-items: center;
 }
@@ -100,14 +93,10 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-  background-color: #34495e;
+  background-color: #8f6b18;
 }
 
 .main-content {
-  /* flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    width: calc(100% - 250px); */
   padding-top: 90px;
   padding-left: 130px;
  
@@ -115,19 +104,12 @@ nav ul li a:hover {
 
 .top-cards {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   margin-bottom: 20px;
  
 }
 
 .card {
-  /* flex: 1 1 calc(20% - 10px);
-    margin: 5px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    color: #fff; */
   background: #ecf0f1;
   padding: 20px;
   border-radius: 10px;
@@ -138,19 +120,19 @@ nav ul li a:hover {
 }
 
 .card.balance {
-  background-color: #27ae60;
+  background-color: #1d581d; 
 }
 .card.shopping {
-  background-color: #2980b9;
+  background-color: #2c5d94;
 }
 .card.food {
-  background-color: #f39c12;
+  background-color: #1f7a1f;
 }
 .card.bills {
-  background-color: #c0392b;
+  background-color: #b23b3b;
 }
 .card.others {
-  background-color: #7f8c8d;
+  background-color: #5a5a5a;
 }
 
 .transactions {
@@ -175,10 +157,9 @@ nav ul li a:hover {
 }
 
 .add-expenditure {
-  background-color: #ecf0f1;
+  background-color: #f2e0cb;  /*#ecf0f1
   padding: 20px;
   border-radius: 10px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   margin-bottom: 20px;
 }
 
@@ -186,15 +167,6 @@ nav ul li a:hover {
   margin-bottom: 15px;
   font-size: 20px;
 }
-
-/* .add-expenditure form {
-    display: grid;
-    gap: 10px;
-}
-
-.add-expenditure label {
-    font-weight: bold;
-} */
 
 .add-expenditure form label {
   margin-bottom: 5px;
@@ -204,20 +176,11 @@ nav ul li a:hover {
 .add-expenditure form select {
   width: 100%;
   padding: 8px;
-  /* border: 1px solid #ccc;
-    border-radius: 3px; */
   box-sizing: border-box;
 }
 
 .add-expenditure form button {
-  /* padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; */
-  background: #2c3e50;
+  background: goldenrod;
   color: #ecf0f1;
   border: none;
   padding: 10px;
@@ -230,10 +193,9 @@ nav ul li a:hover {
 }
 
 .add-expenditure button:hover {
-  background-color: #0056b3;
+  background-color: rgb(125, 94, 17);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .main-content {
     width: 100%;
@@ -283,4 +245,282 @@ nav ul li a:hover {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
+} */
+
+
+/*//////////////////////////////////////////////////////////////////////////////**/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
 }
+
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: #63441b;
+  color: #ecf0f1;
+  height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 1000; 
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.sidebar nav ul li a span {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+.user-info .status {
+  color: #2ecc71;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a i {
+  margin-right: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #8f6b18;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  margin-left: 230px; 
+  padding: 20px;
+  
+}
+
+.top-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.left-column {
+  width: 530px;
+}
+
+.middle-column {
+  flex: 1;
+  width: 250px;
+  height: fit-content;
+  margin: 0 20px;
+}
+
+.right-column {
+  width: 500px;
+}
+
+.card.balance{
+  /* width: 530px; */
+  margin-left: 150px;
+  
+}
+
+.card {
+  /* background: #e8b26d; */
+  background:  #debd6b;
+  padding: 20px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.transactions {
+  background: #f2e0cb;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.transactions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions th,
+.transactions td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #DAA520;
+}
+
+.add-expenditure {
+  background: #f2e0cb;
+  padding: 20px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-expenditure h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.add-expenditure form label {
+  margin-bottom: 5px;
+}
+
+.add-expenditure form input,
+.add-expenditure form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.add-expenditure form button {
+  background: goldenrod;
+  color: #ecf0f1;
+  border: none;
+  padding: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-expenditure button:hover {
+  background-color: rgb(125, 94, 17);
+}
+
+/* .error {
+  background: #e74c3c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+} */
+
+.error {
+  background: #e74c3c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 80%; 
+  max-width: 600px; 
+  text-align: center; 
+  z-index: 1000; 
+}
+
+
+@media (max-width: 1200px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .right-column {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .left-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    left: -250px;
+    transition: left 0.3s ease;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar.open {
+    left: 0
+  }
+}  
+
+

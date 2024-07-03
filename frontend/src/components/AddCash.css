@@ -1,7 +1,9 @@
 .add-cash-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
 }
 
 .card.balance {
@@ -10,12 +12,10 @@
   border-radius: 8px; 
   padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
   width: 100%;
   max-width: 275px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
-
 
 .card.balance h3 {
   margin: 0;
@@ -31,11 +31,13 @@
 }
 
 .add-cash {
-  background-color: #ffffff;
-  border: 1px solid #dee2e6;
+  background-color: #f2e0cb;
+  border: 1px solid #debd6b;
   border-radius: 5px;
   padding: 20px;
-  width: 100%;
+  width: 800px;
+  margin-left: 50px;
+  /* max-width: 600px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,7 +72,7 @@
 .add-cash form input[type="date"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid #debd6b;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -78,7 +80,8 @@
 .add-cash form button {
   width: 100%;
   padding: 12px; 
-  background-color: #5e80a4;
+  margin-top: 30px;
+  background-color: goldenrod;
   border: none;
   border-radius: 5px;
   color: white;
@@ -88,5 +91,5 @@
 }
 
 .add-cash form button:hover {
-  background-color: #405872;
+  background-color: rgb(125, 94, 17);
 }
