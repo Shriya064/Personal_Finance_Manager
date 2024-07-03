@@ -38,7 +38,7 @@ function Register() {
     }
 
     return (
-        <div className="container">     
+        <div className="reg-container">     
             <p className="fincare-text">FinCare</p>
             <h1 className="registration-text">Registration</h1>
             <hr />
