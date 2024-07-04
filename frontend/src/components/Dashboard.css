@@ -41,12 +41,12 @@ html {
 }
 
 .sidebar nav ul li a i {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-right: 10px;
 }
 
 .sidebar nav ul li a span {
-  font-size: 1rem;
+  font-size: 1.4rem;
   white-space: nowrap;
 }
 
@@ -123,24 +123,23 @@ nav ul li a:hover {
 }
 
 .card.balance{
-  /* width: 530px; */
-  margin-left: 150px;
-  
+  margin-left: 20px;
 }
 
 .card {
   /* background: #e8b26d; */
   background:  #debd6b;
   padding: 20px;
-  height: 150px;
+  height: 170px;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 
 .card h3 {
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -154,11 +153,12 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-left: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .transactions h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
@@ -177,24 +177,26 @@ nav ul li a:hover {
 .add-expenditure {
   background: #f2e0cb;
   padding: 20px;
-  height: 500px;
+  height: 570px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .add-expenditure h3 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
 .add-expenditure form label {
   margin-bottom: 5px;
+  font-size: 22px;
 }
 
 .add-expenditure form input,
 .add-expenditure form select {
   width: 100%;
-  padding: 8px;
+  font-size: 18px;
+  padding: 12px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
