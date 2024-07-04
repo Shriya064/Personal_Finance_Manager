@@ -1,17 +1,20 @@
-p {
-   margin: 0px;
+.overall-hp-container{
+   margin: 0 80px;
 }
-
 .navbar-container{
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    gap: 3px;
-   margin-bottom: -3px;
+   margin-bottom: 6px;
    align-items: center; 
+   background-color: antiquewhite;
+   height: 120px;
+   padding: 15px 0;
    
    img {
-         height: 200px;
-         width: 220px;
+         height: 100px;
+         width: 120px;
+         margin-bottom: 7px;
       }
 
    .fincare-text {
@@ -19,34 +22,50 @@ p {
       font-weight: 900;
       font-family: "Playwrite US Modern", cursive;
       font-optical-sizing: auto;
-      font-size: 70px;
+      font-size: 40px;
+      margin-top: 7px;
+   }
+   .pm-text {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: gray;
+      font-size: 16px;
+      margin-top: 78px;
+      margin-left: -170px;
    }
 }
 
+.main-content-container{
+   margin-left: 100px;
+}
+.homepage-tagline-illus-container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 0px;
+
+   img{
+      width: 800px;
+      height: 500px;
+   }
+}
 .tag-lines {
    display: flex;
    flex-direction: column;
-   align-items: center;
 }
 
-.tagline-1 {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: gray;
-   font-size: 16px;
-   margin-bottom: 60px;  
+.tagline-1{
+   color: rgb(57, 163, 57);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 75px;
+   margin-bottom: -2px;
 }
 
 .tagline-2{
-   color: rgb(57, 163, 57);
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-size: 60px;
-}
-
-.tagline-3{
    color: rgb(171, 112, 23);
-   margin-bottom: 30px;
+   margin-bottom: 20px;
    font-size: 20px;
    font-weight: bold;
+   margin-left: 15px;
 }
 
 
@@ -54,15 +73,15 @@ p {
 .homepage-buttons {
    display: flex;
    flex-direction: row;
-   justify-content: center;
    gap: 3px;
    margin-top: 20px;
 }
 
 .btn {
-   padding: 10px 20px;
-   width: 150px;
-   font-size: 1rem;
+   padding: 15px 16px;
+   width: 200px;
+   height: 60px;
+   font-size: 20px;
    text-decoration: none;
    margin: 0 10px;
    border: 2px solid transparent;
@@ -95,41 +114,46 @@ p {
    border-color: #e55512;
 }
 
-.hr-element {
-   
+.hr-element {  
    width: 50%;
    margin-left: auto;
    margin-right: auto;
    border: 1px solid #000;
-   margin-top: 80px;  
-   margin-bottom: 40px;   
+   margin-top: 80px;   
+}
+
+.feature-text, .btyb-text {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   font-family: cursive;
+   color: purple;
 }
 
 .features-container {
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 50px;
-   gap:0px;
-
-   h2 {
-      margin-bottom: 50px;
-      font-family: cursive;
-      color: purple;
-   }
+   flex-direction: row;
+   gap: 50px;
+   justify-content: center;
+   padding: 50px 0;
+   background-color: rgb(217, 241, 242);
 }
 
 .feature{
    display: flex;
-   flex-direction: row;
-   gap: 150px;
-   margin: 30px;
+   flex-direction: column;
+   gap: 10px;
+   padding: 30px;
+   align-items: center;
    overflow: hidden;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.2s ease-in-out;
+
 
    h3{
-      margin-top: 70px;
       font-family: "comic Sans ms";
-      font-size: 30px;
+      font-size: 25px;
    }
    img{
       width: 200px;
@@ -139,13 +163,18 @@ p {
       margin-left: 10px;      
    }
 }
+.feature:hover {
+   transform: translateY(-10px);
+}
+
 .teams-section{
    display: flex;
    flex-direction: column;
    align-items: center;
+   background-color: #f4b2ad;
+   padding: 60px;
 
    h1{
-      margin-top: 30px;
       margin-bottom: 50px;
    }
 }
@@ -173,9 +202,16 @@ p {
    transform: translateY(-10px);
 }
 
+.coderangers-text{
+   font-family: "Orbitron", sans-serif;
+   font-size: 45px;
+   font-weight: 20px;
+   color: #7d2111;
+}
+
 .team-photo {
-   width: 100px;
-   height: 100px;
+   width: 300px;
+   height: 300px;
    border-radius: 50%;
    object-fit: cover;
    margin-bottom: 15px;
@@ -190,6 +226,14 @@ p {
    font-size: 1em;
    color: #666;
    margin: 0;
+}
+
+.footer{
+   margin: 60px;
+
+   h2{
+      color: #e55512;
+   }
 }
 
 
