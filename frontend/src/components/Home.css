@@ -3,11 +3,42 @@
 }
 .navbar-container{
    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+   background-color: antiquewhite;
+}
+.navigation-buttons{
+   display: flex;
+   flex-direction: row;
+
+   button{
+      padding: 7px 10px;
+      width: 120px;
+      height: 45px;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 8px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background-color: #ee7494;
+      color: white;
+      box-shadow: 6px 3px 1px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+   }
+
+   button:hover{
+      background-color: #c60c3e;
+      color: white;
+   }
+}
+.logo-container{
+   display: flex;
    flex-direction: row;
    gap: 3px;
    margin-bottom: 6px;
    align-items: center; 
-   background-color: antiquewhite;
    height: 120px;
    padding: 15px 0;
    
@@ -41,7 +72,8 @@
    display: flex;
    flex-direction: row;
    align-items: center;
-   gap: 0px;
+   gap: 100px;
+   margin-bottom: 80px;
 
    img{
       width: 800px;
@@ -53,6 +85,19 @@
    flex-direction: column;
 }
 
+.app-definition{
+   font-size: 17px;
+   font-family:Arial, Helvetica, sans-serif;
+   width: 650px;
+   color: rgb(233, 59, 59);
+   padding: 20px;
+   text-align: center; 
+   margin-bottom: -2px;
+   margin-left: -10px;
+   font-weight: bold;
+}
+
+
 .tagline-1{
    color: rgb(57, 163, 57);
    font-family: Georgia, 'Times New Roman', Times, serif;
@@ -61,20 +106,24 @@
 }
 
 .tagline-2{
-   color: rgb(171, 112, 23);
+   color: rgb(239, 236, 231);
    margin-bottom: 20px;
    font-size: 20px;
-   font-weight: bold;
-   margin-left: 15px;
+   margin: 15px 100px;
+   background-color: #e74337;
+   text-align: center;
+   width: 410px;
+   padding: 10px 15px;
+   font-family: cursive;
+   border-radius: 12px;
+
 }
-
-
 
 .homepage-buttons {
    display: flex;
    flex-direction: row;
    gap: 3px;
-   margin-top: 20px;
+   margin: 10px 0px 0px 80px;
 }
 
 .btn {
@@ -86,7 +135,8 @@
    margin: 0 10px;
    border: 2px solid transparent;
    border-radius: 5px;
-   transition: all 0.3s ease;
+   box-shadow: 6px 3px 1px rgba(0, 0, 0, 0.2);
+   transition: box-shadow 0.3s ease;
 }
 
 .btn-primary {
@@ -122,20 +172,24 @@
    margin-top: 80px;   
 }
 
-.feature-text, .btyb-text {
-   margin-top: 60px;
-   margin-bottom: 60px;
+.feature-text {
+   margin-top: 40px;
    font-family: cursive;
    color: purple;
 }
 
-.features-container {
+#features{
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(217, 241, 242);
+}
+.featureboxes-container {
    display: flex;
    flex-direction: row;
    gap: 50px;
    justify-content: center;
-   padding: 50px 0;
-   background-color: rgb(217, 241, 242);
+   padding: 50px 30px;
+   
 }
 
 .feature{
@@ -152,11 +206,12 @@
 
 
    h3{
-      font-family: "comic Sans ms";
-      font-size: 25px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      text-align: center;
    }
    img{
-      width: 200px;
+      width: 220px;
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
@@ -167,6 +222,17 @@
    transform: translateY(-10px);
 }
 
+
+
+#team{
+   margin: 50px 0;
+}
+.btyb-text {
+   margin: 0 0 40px 0;
+   font-family: cursive;
+   color: rgb(209, 32, 59);
+
+ }
 .teams-section{
    display: flex;
    flex-direction: column;
@@ -183,35 +249,38 @@
    flex-wrap: wrap;
    justify-content: center;
    padding: 20px;
+   gap: 7px;
 }
 
 .team-member {
-   background-color: #fff;
+   background-color: #e5e0e2;
    border: 1px solid #ddd;
    border-radius: 10px;
    margin: 10px;
    padding: 20px;
    text-align: center;
-   width: 200px;
+   width: 280px;
    /* Adjust the width as needed */
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 16px 8px rgba(0, 0, 0, 0.1);
    transition: transform 0.2s ease-in-out;
 }
 
 .team-member:hover {
-   transform: translateY(-10px);
+   transform: translateY(-14px);
 }
 
 .coderangers-text{
    font-family: "Orbitron", sans-serif;
-   font-size: 45px;
+   font-size: 55px;
    font-weight: 20px;
-   color: #7d2111;
+   color: #d23114;
+   margin-top: 15px;
+   text-shadow: 5px 5px 4px rgba(67, 64, 7, 0.3)
 }
 
 .team-photo {
-   width: 300px;
-   height: 300px;
+   width: 200px;
+   height: 200px;
    border-radius: 50%;
    object-fit: cover;
    margin-bottom: 15px;
@@ -220,6 +289,8 @@
 .team-name {
    font-size: 1.2em;
    margin: 10px 0 5px;
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .team-title {
@@ -229,10 +300,17 @@
 }
 
 .footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin: 60px;
 
    h2{
-      color: #e55512;
+      color: #149334;
+   }
+   h3{
+      font-size: 20px;
+      color: #e74337;
    }
 }
 
