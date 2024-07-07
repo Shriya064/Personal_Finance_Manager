@@ -102,7 +102,7 @@ function Dashboard() {
         </nav>
       </div>
       <div className="main-content">
-        {error && <div className="error">{error}</div>}
+        {/* {error && <div className="error">{error}</div>} */}
         {view === "dashboard" ? (
           <>
             <div className="left-column">
